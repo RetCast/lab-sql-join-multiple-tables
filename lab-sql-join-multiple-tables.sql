@@ -66,7 +66,7 @@ ORDER BY 2 DESC
 LIMIT 5;
 
 #7. Is "Academy Dinosaur" available for rent from Store 1?
-SELECT title, s.store_id
+SELECT title, i.inventory_id, s.store_id
 FROM film AS f
 INNER JOIN inventory AS i
 ON f.film_id = i.film_id
